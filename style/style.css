@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    background-color: #2D25A0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner{
+    display: flex;
+    width: 70%;
+
+
+}
+.banner-headding{
+    width: 100%;
+    padding-bottom: 80px;
+}
+.banner-headding h1{
+    width: 100%;
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-top: 120px;
+
+}
+.btn{
+    background-color: #E02C6D;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    
+}
+.link-button{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-top:10px;
+}
+.banner-img{
+    width: 100%;
+    padding-top:67px ;
+    padding-bottom: 86px;
+    
+}
+.banner-img img{
+    width: 100%;
+    max-width: 556px;
+}
+.banner:hover .banner-img img{
+    transform:scale(1.1);
+    transition: transform 0.05s ease-in;
+}
+/* player section  */
+.players-section{
+    width: 70%;
+    padding-top: 70px;
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 45px;
+    grid-column-gap: 30px;
+}
+
+.player-card{
+
+    border: 2px 2px 2px 2px solid white;
+    padding:10px;
+    box-shadow: 3px 0px 17px 1px grey;
+}
+.player-card:hover{
+    box-shadow: 0px 1px 20px 13px grey;
+}
+.player-img img{
+    width: 100%;
+}
+
+/* footer section  */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 158px;
+}
+.footer-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 483px;
+}
+
+.social-icon{
+    font-size: 32px;
+    color:#969BAB;
+}
+.social-icon i{
+    padding:10px;
+    background-color:#E7E7E8 ;
+    border: 2px 2px 2px 2px solid #E7E7E8;
+    border-radius: 16px;
+}
+
+.footer p{
+    font-size: 24px;
+    
+}
+
+/* responsive for tablate  */
+
+@media only screen and (max-width:1050px){
+    .banner-headding h1{
+        padding: 10px;
+    }
+    
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+ /* responsive for mobile  */
+
+ @media only screen and (max-width:768px) {
+
+    .banner{
+        flex-direction: column;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-img img{
+        object-fit: contain;
+    }
+ }
+
+
+
+
